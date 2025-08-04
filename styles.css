@@ -10,6 +10,8 @@ body {
 
 #draggable-image1 {
     position: absolute;
+    top: 10vh;
+    left: 5vw;
     cursor: move;
     width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
