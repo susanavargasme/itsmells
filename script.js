@@ -295,6 +295,34 @@ draggableImage5.ondragstart = function () {
   return false;
 };
 
+draggableImage6.addEventListener("mousedown", function (e) {
+  let shiftX = e.clientX - draggableImage6.getBoundingClientRect().left;
+  let shiftY = e.clientY - draggableImage6.getBoundingClientRect().top;
+
+  function moveAt(pageX, pageY) {
+    draggableImage6.style.left = pageX - shiftX + "px";
+    draggableImage6.style.top = pageY - shiftY + "px";
+  }
+
+  function onMouseMove(e) {
+    moveAt(e.pageX, e.pageY);
+  }
+
+  document.addEventListener("mousemove", onMouseMove);
+
+  draggableImage6.addEventListener(
+    "mouseup",
+    function () {
+      document.removeEventListener("mousemove", onMouseMove);
+    },
+    { once: true }
+  );
+});
+
+draggableImage6.ondragstart = function () {
+  return false;
+};
+
  let timeout;
 
     function reiniciarTemporizador() {
