@@ -7,6 +7,8 @@ const draggableImage2 = document.getElementById("draggable-image2");
 const draggableImage3 = document.getElementById("draggable-image3");
 const draggableImage4 = document.getElementById("draggable-image4");
 const draggableImage5 = document.getElementById("draggable-image5");
+const draggableImage6 = document.getElementById("draggable-image6");
+
 
 const script = [
   { sender: "yo", message: "no me mires así" },
