@@ -11,7 +11,7 @@ body {
 #draggable-image1 {
     position: absolute;
     top: 10vh;
-    left: 5vw;
+    left: 15vw;
     cursor: move;
     width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
@@ -26,8 +26,8 @@ body {
 }
 #draggable-image3 {
     position: absolute;
-    top: 30vh;
-    left: 45vw;
+    top: 25vh;
+    left: 35vw;
     cursor: move;
     width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
