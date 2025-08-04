@@ -325,26 +325,4 @@ draggableImage6.ondragstart = function () {
 
  let timeout;
 
-    function reiniciarTemporizador() {
-      // Limpiar el temporizador anterior
-      clearTimeout(timeout);
-      // Establecer un nuevo temporizador para 10 minutos (600000 milisegundos)
-      timeout = setTimeout(() => {
-        location.reload(); // Refrescar la página
-      }, 600000); // 10 minutos
-    }
-
-    function iniciarDetecciónInactividad() {
-      // Eventos que indican actividad del usuario
-      const eventos = ['click', 'mousemove', 'keydown', 'scroll', 'touchstart'];
-
-      eventos.forEach(evento => {
-        document.addEventListener(evento, reiniciarTemporizador);
-      });
-
-      // Iniciar el temporizador por primera vez
-      reiniciarTemporizador();
-    }
-
-    // Iniciar cuando se carga la página
-    window.onload = iniciarDetecciónInactividad;
+    
