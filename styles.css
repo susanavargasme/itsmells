@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: RoyalBlue;
+}
+
+#draggable-image1 {
+    position: absolute;
+    cursor: move;
+    width: 100px; /* Cambia el tamaño como desees */
+    height: auto; /* Para mantener la proporción si cambias el tamaño */
+    transform: rotate(10deg); /* Rotación de 30 grados, ajusta según necesites */
+}
+#draggable-image2 {
+    position: absolute;
+    cursor: move;
+    width: 400px; /* Cambia el tamaño como desees */
+    height: auto; /* Para mantener la proporción si cambias el tamaño */
+    transform: rotate(10deg); /* Rotación de 30 grados, ajusta según necesites */
+}
+#draggable-image3 {
+    position: absolute;
+    cursor: move;
+    width: 350px; /* Cambia el tamaño como desees */
+    height: auto; /* Para mantener la proporción si cambias el tamaño */
+    transform: rotate(10deg); /* Rotación de 30 grados, ajusta según necesites */
+}
+#draggable-image4 {
+    position: absolute;
+    cursor: move;
+    width: 200px; /* Cambia el tamaño como desees */
+    height: auto; /* Para mantener la proporción si cambias el tamaño */
+}
+#draggable-image5 {
+    position: absolute;
+    cursor: move;
+    width: 350px; /* Cambia el tamaño como desees */
+    height: auto; /* Para mantener la proporción si cambias el tamaño */
+    transform: rotate(-8deg); /* Rotación de 30 grados, ajusta según necesites */
+}
+
+
+
+.chat-container {
+    background-color: #F8C8DC;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: move;
+  
+}
+
+.chatbox {
+    padding: 30px;
+    height: 300px;
+    overflow-y: auto;
+    border: 3px outset #FFC0CB;
+    background-color: #F8C8DC;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.yo {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 30px;  
+    color: RoyalBlue;
+}
+
+.tú {
+    color: SeaGreen;
+    text-align: right;
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 30px;  
+}
+
+.chat-form {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 3px outset #FFC0CB;
+    outline: none;
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 25px; 
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;  
+    background-color: #F8C8DC;
+    border: 3px outset #FFC0CB;
+    color: white;
+    cursor: pointer;
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 25px;  
+}
+
+.draggable-container {
+    position: relative;
+}
+
+
