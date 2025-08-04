@@ -11,36 +11,38 @@ body {
 #draggable-image1 {
     position: absolute;
     cursor: move;
-    width: 100px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
-    transform: rotate(10deg); /* Rotación de 30 grados, ajusta según necesites */
 }
 #draggable-image2 {
     position: absolute;
     cursor: move;
-    width: 400px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
-    transform: rotate(10deg); /* Rotación de 30 grados, ajusta según necesites */
 }
 #draggable-image3 {
     position: absolute;
     cursor: move;
-    width: 350px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
-    transform: rotate(10deg); /* Rotación de 30 grados, ajusta según necesites */
 }
 #draggable-image4 {
     position: absolute;
     cursor: move;
-    width: 200px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image5 {
     position: absolute;
     cursor: move;
-    width: 350px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
-    transform: rotate(-8deg); /* Rotación de 30 grados, ajusta según necesites */
+}
+#draggable-image6 {
+    position: absolute;
+    cursor: move;
+    width: 500px; /* Cambia el tamaño como desees */
+    height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 
 
