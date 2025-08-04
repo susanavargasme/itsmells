@@ -18,30 +18,40 @@ body {
 }
 #draggable-image2 {
     position: absolute;
+    top: 20vh;
+    left: 25vw;
     cursor: move;
     width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image3 {
     position: absolute;
+    top: 30vh;
+    left: 45vw;
     cursor: move;
     width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image4 {
     position: absolute;
+    top: 40vh;
+    left: 65vw;
     cursor: move;
     width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image5 {
     position: absolute;
+    top: 50vh;
+    left: 85vw;
     cursor: move;
     width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image6 {
     position: absolute;
+    top: 60vh;
+    left: 15vw;
     cursor: move;
     width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
