@@ -12,6 +12,7 @@ body {
     position: absolute;
     top: 10vh;
     left: 15vw;
+    transform: translate(-50%, -50%)
     cursor: move;
     width: 1000px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
@@ -20,6 +21,7 @@ body {
     position: absolute;
     top: 20vh;
     left: 55vw;
+    transform: translate(-50%, -50%)
     cursor: move;
     width: 1000px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
@@ -28,6 +30,7 @@ body {
     position: absolute;
     top: 25vh;
     left: 35vw;
+    transform: translate(-50%, -50%)
     cursor: move;
     width: 1000px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
@@ -36,6 +39,7 @@ body {
     position: absolute;
     top: 40vh;
     left: 25vw;
+    transform: translate(-50%, -50%)
     cursor: move;
     width: 1000px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
@@ -44,6 +48,7 @@ body {
     position: absolute;
     top: 50vh;
     left: 65vw;
+    transform: translate(-50%, -50%)
     cursor: move;
     width: 1000px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
@@ -52,6 +57,7 @@ body {
     position: absolute;
     top: 60vh;
     left: 15vw;
+    transform: translate(-50%, -50%)
     cursor: move;
     width: 1000px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
