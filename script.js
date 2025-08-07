@@ -11,10 +11,10 @@ const draggableImage6 = document.getElementById("draggable-image6");
 
 
 const script = [
-  { sender: "yo", message: "no me mires así" },
-  { sender: "tú", message: "cómo?" },
-  { sender: "yo", message: "así" },
-  { sender: "tú", message: "no sé cómo te estoy mirando" },
+  { sender: "mom", message: "What were you saying?" },
+  { sender: "me", message: "It smells" },
+  { sender: "mom", message: "What do you mean?" },
+  { sender: "me", message: "It smells like wet soil. That smell we always knew,  when we were growing up, building, making, playing with sand. It’s the kind of smell that settles deep in the chest." },
   { sender: "yo", message: "con pesar" },
   { sender: "tú", message: "no sé cómo más mirarte" },
   { sender: "yo", message: "no me mires entonces" },
