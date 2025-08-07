@@ -23,7 +23,7 @@ body {
     left: 55vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 500px; /* Cambia el tamaño como desees */
+    width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image3 {
@@ -41,7 +41,7 @@ body {
     left: 25vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 500px; /* Cambia el tamaño como desees */
+    width: 600px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image5 {
@@ -59,7 +59,7 @@ body {
     left: 15vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 500px; /* Cambia el tamaño como desees */
+    width: 700px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 
@@ -96,11 +96,11 @@ body {
     font-weight: 400;
     font-style: italic;    
     font-size: 15px;  
-    color: #c4928f;
+    color: ##943232;
 }
 
 .me {
-    color: #c4928f;
+    color: #943232;
     text-align: right;
     font-family: "Noto Serif", serif;
     font-weight: 400;
