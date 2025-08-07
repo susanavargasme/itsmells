@@ -14,40 +14,73 @@ const script = [
   { sender: "mom", message: "What were you saying?" },
   { sender: "me", message: "It smells" },
   { sender: "mom", message: "What do you mean?" },
-  { sender: "me", message: "It smells like wet soil. That smell we always knew,  when we were growing up, building, making, playing with sand. It’s the kind of smell that settles deep in the chest.\n\n It smells.\n\n The light here is soft, almost reverent. It doesn’t illuminate so much as it listens. Small figures, black, rounded, sit quietly in the space. It’s the light that shapes them. Or maybe it’s the other way around. I feel heard by the earth.\n\n It smells.\n\n Everything here is in conversation: earth and sky, shadow and glow, presence and memory. It is a play between light and soil. Between the visible and the felt. I feel the earth has something to tell.\n\n This is  Cielo Terrenal (Earthly Heaven) by Delcy Morelos. But it feels like a place we’ve already known. A space we entered through the soles of our feet.\n\n A reminder that the sacred can be grounded. That we carry the earth inside us.\n\n I wish you could stand in this room with me. I think it would speak to you, too." },
+  { sender: "me", message: "It smells like wet soil." },
+  { sender: "me", message: "That smell we always knew,  when we were growing up, building, making, playing with sand." },
+  { sender: "me", message: "It’s the kind of smell that settles deep in the chest." },
+  { sender: "me", message: "It smells." },
+  { sender: "me", message: "The light here is soft, almost reverent." },
+  { sender: "me", message: "It doesn’t illuminate so much as it listens." },
+  { sender: "me", message: "Small figures, black, rounded, sit quietly in the space." },
+  { sender: "me", message: "It’s the light that shapes them." },
+  { sender: "me", message: "Or maybe it’s the other way around. I feel heard by the earth." },
+  { sender: "me", message: "I feel heard by the earth" },
+  { sender: "me", message: "It smells." },
+  { sender: "me", message: "Everything here is in conversation: earth and sky, shadow and glow, presence and memory." },
+  { sender: "me", message: "It is a play between light and soil. Between the visible and the felt." },
+  { sender: "me", message: "I feel the earth has something to tell." },
+  { sender: "me", message: "This is Cielo Terrenal (Earthly Heaven) by Delcy Morelos." },
+  { sender: "me", message: "But it feels like a place we’ve already known." },
+  { sender: "me", message: "A space we entered through the soles of our feet." },
+  { sender: "me", message: "A reminder that the sacred can be grounded." },
+  { sender: "me", message: "That we carry the earth inside us." },
+  { sender: "me", message: "I wish you could stand in this room with me." },
+  { sender: "me", message: "I think it would speak to you, too." },
 ];
 
 let scriptIndex = 1;
 
 chatForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  if (scriptIndex < script.length) {
-    const nextMessage = script[scriptIndex];
+
+  function showNextMessage() {
+    if (scriptIndex >= script.length) {
+      alert("chao");
+      window.close();
+      return;
+    }
+
+    const currentMessage = script[scriptIndex];
     const messageDiv = document.createElement("div");
-    messageDiv.classList.add("message", nextMessage.sender);
-    messageDiv.innerText = `${nextMessage.sender}: ${nextMessage.message}`;
+    messageDiv.classList.add("message", currentMessage.sender);
+    messageDiv.innerText = `${currentMessage.sender}: ${currentMessage.message}`;
     chatbox.appendChild(messageDiv);
     chatbox.scrollTop = chatbox.scrollHeight;
     scriptIndex++;
 
-    if (nextMessage.sender === "me") {
-      // Simulate bot response after a short delay
-      setTimeout(function () {
-        const botMessage = script[scriptIndex];
-        const botMessageDiv = document.createElement("div");
-        botMessageDiv.classList.add("message", botMessage.sender);
-        botMessageDiv.innerText = `${botMessage.sender}: ${botMessage.message}`;
-        chatbox.appendChild(botMessageDiv);
-        chatbox.scrollTop = chatbox.scrollHeight;
-        scriptIndex++;
-      }, 3000); // Adjust delay as needed
+    // Si el próximo también es de "me", esperamos y lo mostramos
+    if (
+      scriptIndex < script.length &&
+      currentMessage.sender === "me" &&
+      script[scriptIndex].sender === "me"
+    ) {
+      setTimeout(showNextMessage, 3000); // 2 segundos de pausa entre fragmentos
     }
-  } else {
-    alert("chao");
-    window.close();
+
+    // Si el mensaje actual es "me" y el siguiente es "mom", esperamos respuesta
+    else if (
+      currentMessage.sender === "me" &&
+      scriptIndex < script.length &&
+      script[scriptIndex].sender === "mom"
+    ) {
+      setTimeout(showNextMessage, 3000); // 3 segundos para respuesta de mom
+    }
   }
+
+  showNextMessage();
   chatInput.value = "";
 });
+
+
 
 draggableContainer.addEventListener("mousedown", function (e) {
   let rect = draggableContainer.getBoundingClientRect();
