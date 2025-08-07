@@ -102,7 +102,7 @@ chatForm.addEventListener("submit", function (e) {
     chatbox.scrollTop = chatbox.scrollHeight;
     scriptIndex++;
 
-    if (nextMessage.sender === "tú") {
+    if (nextMessage.sender === "me") {
       // Simulate bot response after a short delay
       setTimeout(function () {
         const botMessage = script[scriptIndex];
