@@ -14,27 +14,18 @@ const script = [
   { sender: "mom", message: "What were you saying?" },
   { sender: "me", message: "It smells." },
   { sender: "mom", message: "What do you mean?" },
-  { sender: "me", message: "It smells like wet soil." },
-  { sender: "me", message: "That smell we always knew,  when we were growing up, building, making, playing with sand." },
-  { sender: "me", message: "It’s the kind of smell that settles deep in the chest." },
+  { sender: "me", message: "It smells like wet soil. That smell we always knew,  when we were growing up, building, making, playing with sand. It’s the kind of smell that settles deep in the chest." },
   { sender: "me", message: "It smells." },
-  { sender: "me", message: "The light here is soft, almost reverent." },
-  { sender: "me", message: "It doesn’t illuminate so much as it listens." },
-  { sender: "me", message: "Small figures, black, rounded, sit quietly in the space." },
-  { sender: "me", message: "It’s the light that shapes them." },
-  { sender: "me", message: "Or maybe it’s the other way around. I feel heard by the earth." },
-  { sender: "me", message: "I feel heard by the earth" },
-  { sender: "me", message: "It smells." },
-  { sender: "me", message: "Everything here is in conversation: earth and sky, shadow and glow, presence and memory." },
-  { sender: "me", message: "It is a play between light and soil. Between the visible and the felt." },
-  { sender: "me", message: "I feel the earth has something to tell." },
-  { sender: "me", message: "This is Cielo Terrenal (Earthly Heaven) by Delcy Morelos." },
-  { sender: "me", message: "But it feels like a place we’ve already known." },
-  { sender: "me", message: "A space we entered through the soles of our feet." },
+  { sender: "me", message: "The light here is soft, almost reverent. It doesn’t illuminate so much as it listens. Small figures, black, rounded, sit quietly in the space. It’s the light that shapes them." },
+  { sender: "mom", message: "Or maybe it’s the other way around?" },
+  { sender: "me", message: "I feel heard by the earth." },
+  { sender: "mom", message: "It smells?" },
+  { sender: "me", message: "Everything here is in conversation: earth and sky, shadow and glow, presence and memory. It is a play between light and soil. Between the visible and the felt. " },
+  { sender: "mom", message: "I feel the earth has something to tell." },
+  { sender: "me", message: "This is Cielo Terrenal (Earthly Heaven) by Delcy Morelos. But it feels like a place we’ve already known. A space we entered through the soles of our feet." },
   { sender: "me", message: "A reminder that the sacred can be grounded." },
-  { sender: "me", message: "That we carry the earth inside us." },
+  { sender: "mom", message: "That we carry the earth inside us." },
   { sender: "me", message: "I wish you could stand in this room with me." },
-  { sender: "me", message: "I think it would speak to you, too." },
 ];
 
 let scriptIndex = 1;
@@ -44,7 +35,7 @@ chatForm.addEventListener("submit", function (e) {
 
   function showNextMessage() {
     if (scriptIndex >= script.length) {
-      alert("chao");
+      alert("I think it would speak to you, too.");
       window.close();
       return;
     }
@@ -63,7 +54,7 @@ chatForm.addEventListener("submit", function (e) {
       currentMessage.sender === "me" &&
       script[scriptIndex].sender === "me"
     ) {
-      setTimeout(showNextMessage, 3000); // 2 segundos de pausa entre fragmentos
+      setTimeout(showNextMessage, 3000); // 3 segundos de pausa entre fragmentos
     }
 
     // Si el mensaje actual es "me" y el siguiente es "mom", esperamos respuesta
