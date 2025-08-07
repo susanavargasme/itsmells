@@ -12,7 +12,7 @@ const draggableImage6 = document.getElementById("draggable-image6");
 
 const script = [
   { sender: "mom", message: "What were you saying?" },
-  { sender: "me", message: "It smells" },
+  { sender: "me", message: "It smells." },
   { sender: "mom", message: "What do you mean?" },
   { sender: "me", message: "It smells like wet soil." },
   { sender: "me", message: "That smell we always knew,  when we were growing up, building, making, playing with sand." },
