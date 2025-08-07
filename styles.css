@@ -14,7 +14,7 @@ body {
     left: 15vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 1000px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image2 {
@@ -23,7 +23,7 @@ body {
     left: 55vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 1000px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image3 {
@@ -32,7 +32,7 @@ body {
     left: 35vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 1000px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image4 {
@@ -41,7 +41,7 @@ body {
     left: 25vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 1000px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image5 {
@@ -50,7 +50,7 @@ body {
     left: 65vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 1000px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 #draggable-image6 {
@@ -59,7 +59,7 @@ body {
     left: 15vw;
     transform: translate(-50%, -50%)
     cursor: move;
-    width: 1000px; /* Cambia el tamaño como desees */
+    width: 500px; /* Cambia el tamaño como desees */
     height: auto; /* Para mantener la proporción si cambias el tamaño */
 }
 
